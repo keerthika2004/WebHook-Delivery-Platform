@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>dev.hooklane</groupId>
+        <artifactId>hooklane-parent</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+    </parent>
+
+    <!-- Shared library (message formats, HMAC signing, URL safety).
+         Plain JAR on purpose: it gets imported by api, worker, and chaos-receiver, never run on its own. -->
+    <artifactId>webhook-common</artifactId>
+    <name>Hooklane :: Common Library</name>
+</project>
